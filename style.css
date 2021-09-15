@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #404552;
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Leto", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #EEEEEE;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: -15rem;
+}
+
+.pw-container {
+    background-color: #383c4a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    min-width: 400px;
+    border-radius: 10px;
+}
+
+.pw-header {
+    padding: 1rem;
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.pw {
+    color: #EEEEEE;
+    background-color: #7c818c;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pw button {
+    background-color: #4b5162;
+    border: none;
+    border-radius: 2px;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 75%;
+    transform: translate(0%, 0%);
+}
+
+.form-control {
+    color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    padding: 0 5rem;
+}
+
+.generate {
+    background-color: #3768a4;
+    color: #EEEEEE;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+}

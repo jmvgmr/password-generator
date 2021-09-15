@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>P4s$w0rd G3n3r4t0r</h1>
+<div class="pw-container">
+    <div class="pw-header">
+        <div class="pw">
+            <span id="pw">G3n3r4t3d_P4s$w0rd</span>
+            <button id="copy">Copy</button>
+        </div>
+    </div>
+    <div class="pw-body">
+        <div class="form-control">
+            <label for="length">Length (8-40)</label>
+            <input id="length" value="8" type="number" min="8" max="40" size="2" required>
+        </div>
+        <div class="form-group">
+            <div class="form-control">
+                <label for="upper">Uppercase letters</label>
+                <input id="upper" type="checkbox" checked>
+            </div>
+            <div class="form-control">
+                <label for="lower">Lowercase letters</label>
+                <input id="lower" type="checkbox" checked>
+            </div>
+            <div class="form-control">
+                <label for="number">Numbers</label>
+                <input id="number" type="checkbox" checked>
+            </div>
+            <div class="form-control">
+                <label for="symbol">Symbols</label>
+                <input id="symbol" type="checkbox" checked>
+            </div>
+        </div>
+        <input class="generate" id="generate" type="submit" value="Generate">
+    </div>
+</div>
+</body>
+</html>
